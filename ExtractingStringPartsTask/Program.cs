@@ -30,10 +30,22 @@
             Console.WriteLine(state.IndexOf("f"));
 
             //************CHALLENGE****************//
+            
             // Output how many vowels are in each of the strings in the format
-             
-            // California has n vowels
-            // Show your evidence of the program running in the Readme file
-        }
+            Console.WriteLine("What is the string you want to know the number of vowels for?");
+            string my_string = Console.ReadLine();
+            int vowel = 0;
+             for(i = 0; i < my_string.Length ; i++)
+             {
+                
+                if (my_string[i] == 'a' || my_string[i] == 'e' || 
+                my_string[i] == 'i' ||my_string[i] == 'o' || 
+                my_string[i] == 'u' || my_string[i] == 'A' || 
+               my_string[i] == 'E' || my_string[i] == 'I' || 
+                my_string[i] == 'O' ||my_string[i] == 'U')
+              {
+               vowel = vowel + 1;
+              }
+             }
     }
 }
