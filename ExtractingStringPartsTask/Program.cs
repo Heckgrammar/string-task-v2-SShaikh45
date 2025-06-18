@@ -43,13 +43,11 @@
                 my_string[i] == 'u' || my_string[i] == 'A' || 
                my_string[i] == 'E' || my_string[i] == 'I' || 
                 my_string[i] == 'O' ||my_string[i] == 'U')
-              {
+               {
                vowel = vowel + 1;
-                
-              }
+                }
              }
             Console.WriteLine("There are "+ vowel + " vowels in "+ my_string):
-
         }
     }
 }
