@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            string country = "United States of America";
+         string country = "United States of America";
             string state = "California";
             string city = "San Fransicso";
             string landmark = "Alcatraz Island";
@@ -18,13 +18,15 @@
             Console.WriteLine(country[0]);
 
             // output a concatenation of the first and last characters of city
-            Console.WriteLine(city[0]+ city[13]);
+		    string two_string = Convert.ToString(city[0]);
+			string three_string = Convert.ToString(city[12]);
+            Console.WriteLine(two_string+three_string);
 
             // output the substring of landmark starting at c and outputting to the end
             Console.WriteLine(landmark.Substring(2));
 
             // output the substring of country starting at the first S and ending at the first A
-            Console.WriteLine(country.Substring(6,16));
+            Console.WriteLine(country.Substring(6,17));
 
             // output the position of f in California
             Console.WriteLine(state.IndexOf("f"));
@@ -35,7 +37,8 @@
             Console.WriteLine("What is the string you want to know the number of vowels for?");
             string my_string = Console.ReadLine();
             int vowel = 0;
-             for(i = 0; i < my_string.Length ; i++)
+		int i=0;
+             for(i =0; i < my_string.Length ; i++)
              {
                 
                 if (my_string[i] == 'a' || my_string[i] == 'e' || 
@@ -47,7 +50,7 @@
                vowel = vowel + 1;
                 }
              }
-            Console.WriteLine("There are "+ vowel + " vowels in "+ my_string):
+            Console.WriteLine("There are "+ vowel + " vowels in "+ my_string);
         }
     }
 }
